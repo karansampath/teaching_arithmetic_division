@@ -24,3 +24,4 @@ config: {'out_dir': 'out2/division_plain', 'resume_dir': None, 'resume_iter': Fa
 2024-03-02 02:07:09,014 INFO    MainThread:82418 [wandb_run.py:_redirect():2161] Wrapping output streams.
 2024-03-02 02:07:09,014 INFO    MainThread:82418 [wandb_run.py:_redirect():2186] Redirects installed.
 2024-03-02 02:07:09,015 INFO    MainThread:82418 [wandb_init.py:init():847] run started, returning control to user process
+2024-03-02 03:06:00,458 WARNING MsgRouterThr:82418 [router.py:message_loop():77] message_loop has been closed

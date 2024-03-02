@@ -1,0 +1,1 @@
+{"iter": 0, "train/loss": 4.561994552612305, "val/loss": 4.577939510345459, "lr": 0.0, "mfu": -100.0, "ppl": null, "test/accuracy": 0.0, "test/accuracy_ar": null, "test/accuracy_other": null, "train/accuracy": 0.0, "_timestamp": 1709366732.5205069, "_runtime": 3504.0529079437256, "_step": 0, "_wandb": {"runtime": 3521}}
