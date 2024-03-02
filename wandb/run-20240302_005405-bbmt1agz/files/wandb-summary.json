@@ -1,0 +1,1 @@
+{"iter": 0, "train/loss": 4.643733978271484, "val/loss": 4.623478889465332, "lr": 0.0, "mfu": -100.0, "ppl": null, "test/accuracy": 0.0, "test/accuracy_ar": null, "test/accuracy_other": null, "train/accuracy": 0.0, "_timestamp": 1709361771.745009, "_runtime": 2926.1640269756317, "_step": 0}

@@ -1,0 +1,28 @@
+2024-03-02 00:28:56,429 INFO    MainThread:76999 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-02 00:28:56,429 INFO    MainThread:76999 [wandb_setup.py:_flush():76] Configure stats pid to 76999
+2024-03-02 00:28:56,429 INFO    MainThread:76999 [wandb_setup.py:_flush():76] Loading settings from /Users/karansampath/.config/wandb/settings
+2024-03-02 00:28:56,429 INFO    MainThread:76999 [wandb_setup.py:_flush():76] Loading settings from /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/settings
+2024-03-02 00:28:56,429 INFO    MainThread:76999 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-02 00:28:56,429 INFO    MainThread:76999 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-02 00:28:56,429 INFO    MainThread:76999 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'evaluate_additions.py', 'program_abspath': '/Users/karansampath/Documents/GitHub/teaching_arithmetic_division/evaluate_additions.py', 'program': '/Users/karansampath/Documents/GitHub/teaching_arithmetic_division/evaluate_additions.py'}
+2024-03-02 00:28:56,429 INFO    MainThread:76999 [wandb_init.py:_log_setup():526] Logging user logs to /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240302_002856-g6h9ecwb/logs/debug.log
+2024-03-02 00:28:56,429 INFO    MainThread:76999 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240302_002856-g6h9ecwb/logs/debug-internal.log
+2024-03-02 00:28:56,429 INFO    MainThread:76999 [wandb_init.py:init():566] calling init triggers
+2024-03-02 00:28:56,429 INFO    MainThread:76999 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'init_from': 'resume', 'out_dir': 'out2/division_plain', 'start': '\n', 'num_samples': 1, 'max_new_tokens': 4, 'temperature': 0.8, 'top_k': 200, 'seed': 1337, 'device': 'cpu', 'dtype': 'bfloat16', 'compile': False, 'ckpt_path_name': 'ckpt_final.pt', 'dataset': 'bal', 'batch_size': 64, 'num_digit': 3, 'analyze': False, 'reverse_ab': False, 'reverse_c': False, 'zero_pad': False, 'algo_reason': False, 'verbose': True, 'add_space': False, 'verbose_correct': False, 'eps': 0.0, 'simple': False, 'random_A': False, 'random_C': False, 'prompt_overall': 'FILE:/Users/karansampath/Documents/GitHub/teaching_arithmetic_division/data/bal/train_division_7000.txt', 'prompt1': 'FILE:/Users/karansampath/Documents/GitHub/teaching_arithmetic_division/data/bal/train_division_3000.txt', 'prompt2': '', 'prompt3': '', 'prompt4': '', 'wandb_log': True, 'wandb_entity': 'ssdd', 'wandb_project': 'division', 'wandb_run_name': 'eval_plain', 'exp_name': 'eval_plain', 'data_type': 'text', 'operator': '/', 'data_format': 'plain', 'vocabulary': 'all_ascii_chars', 'meta_path_specified': False, 'data_shuffle': True, 'model_type': 'gpt2', 'result_dir': 'out2/division_plain/eval_plain'}
+2024-03-02 00:28:56,429 INFO    MainThread:76999 [wandb_init.py:init():616] starting backend
+2024-03-02 00:28:56,429 INFO    MainThread:76999 [wandb_init.py:init():620] setting up manager
+2024-03-02 00:28:56,432 INFO    MainThread:76999 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-03-02 00:28:56,433 INFO    MainThread:76999 [wandb_init.py:init():628] backend started and connected
+2024-03-02 00:28:56,440 INFO    MainThread:76999 [wandb_init.py:init():720] updated telemetry
+2024-03-02 00:28:56,455 INFO    MainThread:76999 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-02 00:28:56,594 ERROR   MainThread:76999 [wandb_init.py:init():779] encountered error: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2024-03-02 00:28:56,666 ERROR   MainThread:76999 [wandb_init.py:init():1194] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1176, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2024-03-02 00:28:57,683 WARNING MsgRouterThr:76999 [router.py:message_loop():77] message_loop has been closed

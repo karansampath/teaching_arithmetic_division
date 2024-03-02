@@ -1,0 +1,32 @@
+arg = --wandb_project=division Attempting to override wandb_project = division
+Overriding: wandb_project = division
+arg = --wandb_run_name=eval_plain Attempting to override wandb_run_name = eval_plain
+Overriding: wandb_run_name = eval_plain
+arg = --device=cpu Attempting to override device = cpu
+Overriding: device = cpu
+arg = --dataset=bal Attempting to override dataset = bal
+Overriding: dataset = bal
+arg = --out_dir=out2/division_plain Attempting to override out_dir = out2/division_plain
+Overriding: out_dir = out2/division_plain
+arg = --algo_reason=False Attempting to override algo_reason = False
+Overriding: algo_reason = False
+arg = --verbose=True Attempting to override verbose = True
+Overriding: verbose = True
+arg = --data_type=text Attempting to override data_type = text
+Overriding: data_type = text
+arg = --data_format=plain Attempting to override data_format = plain
+Overriding: data_format = plain
+arg = --operator=/ Attempting to override operator = /
+Overriding: operator = /
+arg = --prompt_overall=FILE:/Users/karansampath/Documents/GitHub/teaching_arithmetic_division/data/bal/train_division_7000.txt Attempting to override prompt_overall = FILE:/Users/karansampath/Documents/GitHub/teaching_arithmetic_division/data/bal/train_division_7000.txt
+Overriding: prompt_overall = FILE:/Users/karansampath/Documents/GitHub/teaching_arithmetic_division/data/bal/train_division_7000.txt
+arg = --prompt1=FILE:/Users/karansampath/Documents/GitHub/teaching_arithmetic_division/data/bal/train_division_3000.txt Attempting to override prompt1 = FILE:/Users/karansampath/Documents/GitHub/teaching_arithmetic_division/data/bal/train_division_3000.txt
+Overriding: prompt1 = FILE:/Users/karansampath/Documents/GitHub/teaching_arithmetic_division/data/bal/train_division_3000.txt
+Seeded everything: 1337
+Creating meta file for all reasonable characters...
+all the unique characters: 
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+vocab size: 96
+Loading meta from meta_all_ascii_chars.pkl...
+WARNING: results directory out2/division_plain/eval_plain already exists, overwriting...
+Problem at: /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/wandb/sdk/wandb_init.py 854 getcaller

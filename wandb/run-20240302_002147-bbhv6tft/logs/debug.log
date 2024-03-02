@@ -1,0 +1,28 @@
+2024-03-02 00:21:47,442 INFO    MainThread:76426 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-02 00:21:47,442 INFO    MainThread:76426 [wandb_setup.py:_flush():76] Configure stats pid to 76426
+2024-03-02 00:21:47,442 INFO    MainThread:76426 [wandb_setup.py:_flush():76] Loading settings from /Users/karansampath/.config/wandb/settings
+2024-03-02 00:21:47,442 INFO    MainThread:76426 [wandb_setup.py:_flush():76] Loading settings from /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/settings
+2024-03-02 00:21:47,442 INFO    MainThread:76426 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-02 00:21:47,442 INFO    MainThread:76426 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-02 00:21:47,442 INFO    MainThread:76426 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': '/Users/karansampath/Documents/GitHub/teaching_arithmetic_division/train.py', 'program': '/Users/karansampath/Documents/GitHub/teaching_arithmetic_division/train.py'}
+2024-03-02 00:21:47,442 INFO    MainThread:76426 [wandb_init.py:_log_setup():526] Logging user logs to /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240302_002147-bbhv6tft/logs/debug.log
+2024-03-02 00:21:47,442 INFO    MainThread:76426 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240302_002147-bbhv6tft/logs/debug-internal.log
+2024-03-02 00:21:47,442 INFO    MainThread:76426 [wandb_init.py:init():566] calling init triggers
+2024-03-02 00:21:47,442 INFO    MainThread:76426 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'out_dir': 'out2/division_reverse', 'resume_dir': None, 'resume_iter': False, 'eval_interval': 250, 'log_interval': 10, 'eval_iters': 200, 'eval_only': False, 'always_save_checkpoint': False, 'init_from': 'scratch', 'wandb_entity': 'ssdd', 'wandb_log': True, 'wandb_project': 'division', 'wandb_run_name': 'reverse', 'exp_name': 'default_exp_name', 'dataset': 'bal', 'gradient_accumulation_steps': 1, 'test_batch_size': 128, 'batch_size': 256, 'block_size': 256, 'train_data_path': 'train_division_3000.txt', 'val_data_path': 'val.bin', 'multi_digit': False, 'num_digit': 5, 'binary': False, 'train_both': False, 'data_ratio': 0.2, 'train_data_path2': 'train_addition.bin', 'val_data_path2': 'val_addition.bin', 'eval_text': False, 'eval_text_data_path': None, 'eval_addition': True, 'start': 'FILE:data/bal/test_division2.txt', 'eval_addition_ar': False, 'start_ar': None, 'eval_other': False, 'start_other': None, 'other_operator': '+', 'eval_addition_train': True, 'start_train': None, 'reverse_ab': False, 'reverse_c': True, 'zero_pad': False, 'algo_reason': False, 'add_space': False, 'n_layer': 6, 'n_head': 6, 'n_embd': 384, 'dropout': 0.2, 'bias': False, 'ckpt_path_name': 'ckpt.pt', 'save_final': True, 'learning_rate': 0.001, 'max_iters': 5000, 'weight_decay': 0.1, 'beta1': 0.9, 'beta2': 0.99, 'grad_clip': 1.0, 'decay_lr': True, 'warmup_iters': 100, 'lr_decay_iters': 5000, 'min_lr': None, 'backend': 'nccl', 'device': 'cpu', 'compile': False, 'dtype': 'float16', 'use_flash': True, 'data_type': 'text', 'operator': '/', 'data_shuffle': True, 'data_format': 'reverse', 'vocabulary': 'all_ascii_chars', 'meta_path_specified': True, 'eps': 0, 'tokenizer': 'char', 'simple': False, 'random_A': False, 'random_C': False, 'use_lora': False, 'print_interval': 2}
+2024-03-02 00:21:47,442 INFO    MainThread:76426 [wandb_init.py:init():616] starting backend
+2024-03-02 00:21:47,442 INFO    MainThread:76426 [wandb_init.py:init():620] setting up manager
+2024-03-02 00:21:47,445 INFO    MainThread:76426 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-03-02 00:21:47,448 INFO    MainThread:76426 [wandb_init.py:init():628] backend started and connected
+2024-03-02 00:21:47,458 INFO    MainThread:76426 [wandb_init.py:init():720] updated telemetry
+2024-03-02 00:21:47,477 INFO    MainThread:76426 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-02 00:21:47,649 ERROR   MainThread:76426 [wandb_init.py:init():779] encountered error: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2024-03-02 00:21:47,722 ERROR   MainThread:76426 [wandb_init.py:init():1194] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1176, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2024-03-02 00:21:48,730 WARNING MsgRouterThr:76426 [router.py:message_loop():77] message_loop has been closed

@@ -1,0 +1,265 @@
+wandb_version: 1
+
+out_dir:
+  desc: null
+  value: out2/division_plain
+resume_dir:
+  desc: null
+  value: null
+resume_iter:
+  desc: null
+  value: false
+eval_interval:
+  desc: null
+  value: 250
+log_interval:
+  desc: null
+  value: 10
+eval_iters:
+  desc: null
+  value: 200
+eval_only:
+  desc: null
+  value: false
+always_save_checkpoint:
+  desc: null
+  value: false
+init_from:
+  desc: null
+  value: scratch
+wandb_entity:
+  desc: null
+  value: ssdd
+wandb_log:
+  desc: null
+  value: true
+wandb_project:
+  desc: null
+  value: division
+wandb_run_name:
+  desc: null
+  value: plain
+exp_name:
+  desc: null
+  value: default_exp_name
+dataset:
+  desc: null
+  value: bal
+gradient_accumulation_steps:
+  desc: null
+  value: 1
+test_batch_size:
+  desc: null
+  value: 128
+batch_size:
+  desc: null
+  value: 256
+block_size:
+  desc: null
+  value: 256
+train_data_path:
+  desc: null
+  value: train_division_3000.txt
+val_data_path:
+  desc: null
+  value: val.bin
+multi_digit:
+  desc: null
+  value: false
+num_digit:
+  desc: null
+  value: 5
+binary:
+  desc: null
+  value: false
+train_both:
+  desc: null
+  value: false
+data_ratio:
+  desc: null
+  value: 0.2
+train_data_path2:
+  desc: null
+  value: train_addition.bin
+val_data_path2:
+  desc: null
+  value: val_addition.bin
+eval_text:
+  desc: null
+  value: false
+eval_text_data_path:
+  desc: null
+  value: null
+eval_addition:
+  desc: null
+  value: true
+start:
+  desc: null
+  value: FILE:data/bal/test_division2.txt
+eval_addition_ar:
+  desc: null
+  value: false
+start_ar:
+  desc: null
+  value: null
+eval_other:
+  desc: null
+  value: false
+start_other:
+  desc: null
+  value: null
+other_operator:
+  desc: null
+  value: +
+eval_addition_train:
+  desc: null
+  value: true
+start_train:
+  desc: null
+  value: null
+reverse_ab:
+  desc: null
+  value: false
+reverse_c:
+  desc: null
+  value: false
+zero_pad:
+  desc: null
+  value: false
+algo_reason:
+  desc: null
+  value: false
+add_space:
+  desc: null
+  value: false
+n_layer:
+  desc: null
+  value: 6
+n_head:
+  desc: null
+  value: 6
+n_embd:
+  desc: null
+  value: 384
+dropout:
+  desc: null
+  value: 0.2
+bias:
+  desc: null
+  value: false
+ckpt_path_name:
+  desc: null
+  value: ckpt.pt
+save_final:
+  desc: null
+  value: true
+learning_rate:
+  desc: null
+  value: 0.001
+max_iters:
+  desc: null
+  value: 5000
+weight_decay:
+  desc: null
+  value: 0.1
+beta1:
+  desc: null
+  value: 0.9
+beta2:
+  desc: null
+  value: 0.99
+grad_clip:
+  desc: null
+  value: 1.0
+decay_lr:
+  desc: null
+  value: true
+warmup_iters:
+  desc: null
+  value: 100
+lr_decay_iters:
+  desc: null
+  value: 5000
+min_lr:
+  desc: null
+  value: null
+backend:
+  desc: null
+  value: nccl
+device:
+  desc: null
+  value: mps
+compile:
+  desc: null
+  value: false
+dtype:
+  desc: null
+  value: float16
+use_flash:
+  desc: null
+  value: true
+data_type:
+  desc: null
+  value: text
+operator:
+  desc: null
+  value: /
+data_shuffle:
+  desc: null
+  value: true
+data_format:
+  desc: null
+  value: plain
+vocabulary:
+  desc: null
+  value: all_ascii_chars
+meta_path_specified:
+  desc: null
+  value: true
+eps:
+  desc: null
+  value: 0
+tokenizer:
+  desc: null
+  value: char
+simple:
+  desc: null
+  value: false
+random_A:
+  desc: null
+  value: false
+random_C:
+  desc: null
+  value: false
+use_lora:
+  desc: null
+  value: false
+print_interval:
+  desc: null
+  value: 2
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.3
+    cli_version: 0.16.3
+    framework: huggingface
+    huggingface_version: 4.38.1
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1709356900.04839
+    t:
+      1:
+      - 1
+      - 11
+      - 49
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.11.3
+      5: 0.16.3
+      6: 4.38.1
+      8:
+      - 5
+      13: darwin-arm64

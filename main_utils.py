@@ -171,7 +171,7 @@ def get_encode_decode(meta_path=None, tokenizer='char'):
 
 
 def get_batch(data, batch_size, block_size, device):
-    device_type = 'cuda' if 'cuda' in device else 'cpu' # for later use in torch.autocast
+    device_type = 'cuda' if 'cuda' in device else 'mps' # for later use in torch.autocast
 
     ix = torch.randint(len(data) - block_size, (batch_size,))
     x = torch.stack([torch.from_numpy((data[i:i+block_size]).astype(np.int64)) for i in ix])
@@ -266,11 +266,13 @@ def get_abc_new(abc: str, zero_pad=False, reverse_ab=False, binary=False, few_sh
         operation = '-'
     elif '*' in abc:
         operation = '*'
+    elif '/' in abc:
+        operation = '/'
 
     else:
         print(f'operation not found, abc: {abc}')
 
-    if operation in ['+', '-', '*']:
+    if operation in ['+', '-', '*', '/']:
         [a,b] = abc.split(operation)
 
     elif operation in ['sin', 'sqrt']:
@@ -307,6 +309,7 @@ def get_abc_new(abc: str, zero_pad=False, reverse_ab=False, binary=False, few_sh
     if operation == '+': c = int(a) + int(b)
     elif operation == '-': c = int(a) - int(b)
     elif operation == '*': c = int(a) * int(b)
+    elif operation == '/': c = int(a) / int(b)
     elif operation == 'sin': 
         if algo_reason:
             c = get_algo_reasoning_str(float(a), operator='sin')
@@ -667,7 +670,7 @@ def evaluate_addition_batch(config, model, ctx, encode, decode, verbose=False, n
                     else: # c_hat2 is not a number
                         c = str(c)
 
-                    if op in ['+','-','*']:
+                    if op in ['+','-','*', '/']:
                         if c == c_hat2:
                             correct+=1
                             carry_dictionary[f'carry{num_carry}_correct']+=1
@@ -1067,8 +1070,8 @@ def get_data_list(filename=None, operator='+', delim=None):
                     # remove delim from line
                     line = line.replace(delim, '')
                 # x1, x2 = line.strip().split(operator)
-                if operator in ['+', '-', '*']:
-                    x1, x2 = re.split(r'[+\-\*]', line.strip())
+                if operator in ['+', '-', '*', '/']:
+                    x1, x2 = re.split(r'[+\-\*\/]', line.strip())
                     x2, y = x2.split("=")
                     if operator == '+':
                         y2 = int(x1) + int(x2)
@@ -1076,6 +1079,8 @@ def get_data_list(filename=None, operator='+', delim=None):
                         y2 = int(x1) - int(x2)
                     elif operator == '*':
                         y2 = int(x1) * int(x2)
+                    elif operator == '/':
+                        y2 = int(x1) / int(x2)
                     
                     data_list.append((int(x1), int(x2), int(y2), operator))
 
@@ -1106,13 +1111,15 @@ def get_data_list(filename=None, operator='+', delim=None):
                 data_list.append((line, operator))
         else:
             for _ in range(1000):
-                if operator in ['+', '-', '*']:
+                if operator in ['+', '-', '*', '/']:
                     x1, x2 = random.randint(0, 999), random.randint(0, 999)
                     if operator == '+':
                         y = x1 + x2
                     elif operator == '-':
                         y = x1 - x2
                     elif operator == '*':
+                        y = x1 * x2
+                    elif operator == '/':
                         y = x1 * x2
                     data_list.append((int(x1), int(x2), int(y), operator))
                 
@@ -1143,7 +1150,7 @@ def truncate_to_n_digit(x, n=4):
 
 
 def get_algo_reasoning_str(x, y=0, operator='+', train=True, n=4, simple=False, random_A=False, random_C=False):
-    if operator in ['+', '-', '*']:
+    if operator in ['+', '-', '*', '/']:
         x, y = str(x), str(y)
 
         len_x, len_y = len(x), len(y)
@@ -1399,6 +1406,33 @@ def get_algo_reasoning_str(x, y=0, operator='+', train=True, n=4, simple=False, 
             output_str += f'{a} '
 
         return output_str[:-1]+'\n'
+
+    # elif operator == '/':
+    #     C = 0
+    #     # for i in range(max(len_x, len_y)):
+    #     for i in range(len_y):
+    #         # a = list_x[-1] if i < len_x else 0
+    #         b = list_y[-1] if i < len_y else 0
+    #         # c = a + b + C
+    #         A = b * int(x)
+    #         B = A * (10**i)
+    #         C_prev = C
+    #         C += B
+    #         # A, B = num_to_list(A), num_to_list(B)
+
+    #         output_str += f'{list_to_string(list_x)} / {b} , A={list_to_string([int(digit) for digit in str(A)])} , k={10**i} , B={list_to_string([int(digit) for digit in str(B)])} , C={C_prev}+{B}={C}'
+
+    #         if not i == len_y - 1:
+    #             output_str += '\n'
+    #         list_y = list_y[:-1]
+        
+    #     output_str += ' , END\n</scratch>\n'
+    #     # output_str += f'{list_to_string(list_x)} * {list_to_string(list_y)} , A={list_to_string(A)} C={C} , END\n</scratch>\n'
+        
+    #     for a in str(C):
+    #         output_str += f'{a} '
+
+    #     return output_str[:-1]+'\n'
     
     elif operator == 'sqrt':
         a = x
@@ -1489,7 +1523,7 @@ def get_algo_reasoning_str(x, y=0, operator='+', train=True, n=4, simple=False, 
 
 def add_spaces(s):
     # add space if character is a digit or '=', else don't add space
-    s = ''.join([c + ' ' if c.isdigit() or c in ['=', '.', '+', '-', '*', '('] else c for c in s])
+    s = ''.join([c + ' ' if c.isdigit() or c in ['=', '.', '+', '-', '*', '/' '('] else c for c in s])
     if s[-1] == ' ':
         s = s[:-1]
     s = s.replace(' \n', '\n')
@@ -1514,7 +1548,7 @@ def generate_data_str(data_list, operator='+', format='plain', train=True, shuff
     # for idx, (x1, x2, y) in enumerate(data_list):
     for idx, data_tuple in enumerate(data_list):
         operator = data_tuple[-1]
-        if operator in ['+', '-', '*']:   
+        if operator in ['+', '-', '*', '/']:   
             x1, x2, y = data_tuple[0], data_tuple[1], data_tuple[2]     
             if train:
             # create training data (x1+x2=y)
