@@ -1,0 +1,2 @@
+iter,train_loss,val_loss,val_ppl,test_acc,train_acc,test_acc_ar,test_acc_other
+0,4.550724029541016,4.56765079498291,,0.0,0.0,,

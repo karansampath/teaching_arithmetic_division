@@ -1,0 +1,439 @@
+2024-03-10 22:35:51,935 INFO    StreamThr :16222 [internal.py:wandb_internal():86] W&B internal server running at pid: 16222, started at: 2024-03-10 22:35:51.935271
+2024-03-10 22:35:51,936 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status
+2024-03-10 22:35:51,939 INFO    WriterThread:16222 [datastore.py:open_for_write():87] open: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/run-qxu1xgn8.wandb
+2024-03-10 22:35:51,939 DEBUG   SenderThread:16222 [sender.py:send():382] send: header
+2024-03-10 22:35:51,950 DEBUG   SenderThread:16222 [sender.py:send():382] send: run
+2024-03-10 22:35:52,228 INFO    SenderThread:16222 [dir_watcher.py:__init__():211] watching files in: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files
+2024-03-10 22:35:52,228 INFO    SenderThread:16222 [sender.py:_start_run_threads():1136] run started: qxu1xgn8 with start time 1710124551.935491
+2024-03-10 22:35:52,241 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: check_version
+2024-03-10 22:35:52,242 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: check_version
+2024-03-10 22:35:52,323 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: run_start
+2024-03-10 22:35:52,328 DEBUG   HandlerThread:16222 [system_info.py:__init__():27] System info init
+2024-03-10 22:35:52,328 DEBUG   HandlerThread:16222 [system_info.py:__init__():42] System info init done
+2024-03-10 22:35:52,328 INFO    HandlerThread:16222 [system_monitor.py:start():194] Starting system monitor
+2024-03-10 22:35:52,328 INFO    SystemMonitor:16222 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-10 22:35:52,328 INFO    HandlerThread:16222 [system_monitor.py:probe():214] Collecting system info
+2024-03-10 22:35:52,329 INFO    SystemMonitor:16222 [interfaces.py:start():190] Started cpu monitoring
+2024-03-10 22:35:52,329 INFO    SystemMonitor:16222 [interfaces.py:start():190] Started disk monitoring
+2024-03-10 22:35:52,329 DEBUG   HandlerThread:16222 [system_info.py:probe():151] Probing system
+2024-03-10 22:35:52,330 INFO    SystemMonitor:16222 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-10 22:35:52,332 INFO    SystemMonitor:16222 [interfaces.py:start():190] Started memory monitoring
+2024-03-10 22:35:52,332 INFO    SystemMonitor:16222 [interfaces.py:start():190] Started network monitoring
+2024-03-10 22:35:52,335 DEBUG   HandlerThread:16222 [system_info.py:_probe_git():136] Probing git
+2024-03-10 22:35:52,347 DEBUG   HandlerThread:16222 [system_info.py:_probe_git():144] Probing git done
+2024-03-10 22:35:52,347 DEBUG   HandlerThread:16222 [system_info.py:probe():199] Probing system done
+2024-03-10 22:35:52,347 DEBUG   HandlerThread:16222 [system_monitor.py:probe():223] {'os': 'macOS-14.3-arm64-arm-64bit', 'python': '3.11.3', 'heartbeatAt': '2024-03-11T02:35:52.330411', 'startedAt': '2024-03-11T02:35:51.912244', 'docker': None, 'cuda': None, 'args': ('config2/division/plain/train_division_bal.py', '--device=mps'), 'state': 'running', 'program': '/Users/karansampath/Documents/GitHub/teaching_arithmetic_division/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/karansampath/teaching_arithmetic_division.git', 'commit': '36682a0c00274533f04634ef7ff3362f69525fdb'}, 'email': 'ksampath@seas.upenn.edu', 'root': '/Users/karansampath/Documents/GitHub/teaching_arithmetic_division', 'host': 'MacBook-Pro.local', 'username': 'karansampath', 'executable': '/Library/Frameworks/Python.framework/Versions/3.11/bin/python3', 'cpu_count': 11, 'cpu_count_logical': 11, 'disk': {'/': {'total': 460.4317207336426, 'used': 9.437564849853516}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 18.0}}
+2024-03-10 22:35:52,347 INFO    HandlerThread:16222 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-10 22:35:52,348 INFO    HandlerThread:16222 [system_monitor.py:probe():227] Publishing system info
+2024-03-10 22:35:52,348 INFO    HandlerThread:16222 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-10 22:35:52,349 DEBUG   SenderThread:16222 [sender.py:send():382] send: files
+2024-03-10 22:35:52,349 INFO    SenderThread:16222 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-10 22:35:52,351 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-10 22:35:52,352 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: python_packages
+2024-03-10 22:35:52,352 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:35:52,352 DEBUG   SenderThread:16222 [sender.py:send():382] send: telemetry
+2024-03-10 22:35:52,352 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:35:52,353 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:35:52,728 INFO    wandb-upload_0:16222 [upload_job.py:push():131] Uploaded file /var/folders/yn/wpx1g2g117z07vpq8_h3j_5r0000gn/T/tmp16q0bu51wandb/ukkzavq4-wandb-metadata.json
+2024-03-10 22:35:53,228 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/wandb-metadata.json
+2024-03-10 22:35:53,229 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/requirements.txt
+2024-03-10 22:35:53,229 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:35:55,239 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:35:57,526 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:36:02,542 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:36:07,361 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:36:07,362 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:36:07,362 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:36:08,535 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:36:13,548 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:36:18,558 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:36:22,363 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:36:22,363 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:36:22,363 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:36:24,454 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:36:25,388 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/config.yaml
+2024-03-10 22:36:29,574 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:36:34,596 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:36:37,367 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:36:37,368 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:36:37,369 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:36:39,794 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:36:44,811 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:36:49,831 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:36:52,338 DEBUG   SystemMonitor:16222 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-10 22:36:52,338 DEBUG   SenderThread:16222 [sender.py:send():382] send: telemetry
+2024-03-10 22:36:52,339 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:36:52,370 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:36:52,370 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:36:52,373 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:36:55,466 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:36:56,535 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/config.yaml
+2024-03-10 22:37:00,561 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:37:05,583 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:37:07,375 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:37:07,376 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:37:07,378 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:37:11,571 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:37:16,595 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:37:21,617 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:37:22,345 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:37:22,381 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:37:22,381 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:37:22,383 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:37:27,568 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:37:32,593 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:37:37,389 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:37:37,392 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:37:37,393 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:37:38,475 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:37:43,495 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:37:48,519 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:37:52,346 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:37:52,391 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:37:52,391 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:37:52,394 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:37:54,512 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:37:59,538 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:38:04,555 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:38:07,396 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:38:07,396 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:38:07,399 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:38:09,603 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:38:14,627 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:38:19,650 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:38:22,351 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:38:22,400 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:38:22,401 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:38:22,401 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:38:25,585 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:38:30,605 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:38:35,624 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:38:37,406 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:38:37,407 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:38:37,407 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:38:41,390 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:38:46,407 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:38:51,430 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:38:52,359 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:38:52,411 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:38:52,411 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:38:52,412 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:38:56,492 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:39:01,511 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:39:06,533 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:39:07,417 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:39:07,417 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:39:07,417 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:39:11,589 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:39:16,611 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:39:21,631 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:39:22,364 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:39:22,418 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:39:22,418 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:39:22,418 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:39:27,600 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:39:32,624 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:39:37,424 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:39:37,424 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:39:37,425 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:39:38,586 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:39:43,610 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:39:48,623 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:39:52,371 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:39:52,427 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:39:52,427 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:39:52,429 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:39:54,579 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:39:59,595 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:40:04,614 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:40:07,432 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:40:07,433 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:40:07,433 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:40:10,515 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:40:15,536 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:40:20,558 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:40:22,375 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:40:22,437 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:40:22,437 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:40:22,438 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:40:26,515 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:40:31,536 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:40:36,554 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:40:37,442 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:40:37,442 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:40:37,443 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:40:41,622 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:40:46,648 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:40:51,671 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:40:52,380 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:40:52,447 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:40:52,447 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:40:52,448 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:40:56,750 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:41:01,775 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:41:06,796 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:41:07,452 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:41:07,452 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:41:07,453 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:41:12,610 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:41:17,636 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:41:22,386 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:41:22,456 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:41:22,457 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:41:22,457 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:41:23,562 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:41:28,583 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:41:33,604 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:41:37,461 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:41:37,462 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:41:37,462 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:41:38,680 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:41:43,701 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:41:48,727 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:41:52,391 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:41:52,466 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:41:52,466 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:41:52,466 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:41:54,551 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:41:59,572 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:42:04,596 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:42:07,472 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:42:07,473 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:42:07,474 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:42:10,512 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:42:15,536 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:42:20,562 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:42:22,397 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:42:22,475 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:42:22,476 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:42:22,476 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:42:25,646 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:42:30,667 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:42:35,689 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:42:37,480 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:42:37,481 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:42:37,481 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:42:40,998 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:42:46,019 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:42:51,048 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:42:52,402 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:42:52,485 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:42:52,486 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:42:52,486 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:42:56,594 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:43:01,640 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:43:06,690 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:43:07,495 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:43:07,495 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:43:07,496 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:47:38,135 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:47:43,177 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:47:44,660 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:47:44,749 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:47:44,750 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:47:44,750 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:47:48,961 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:47:54,012 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:47:59,060 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:47:59,759 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:47:59,759 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:47:59,759 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:48:04,989 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:48:10,030 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:48:14,671 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:48:14,761 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:48:14,769 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:48:14,769 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:48:15,845 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:50:55,036 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:50:59,896 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:50:59,902 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:50:59,902 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:51:00,144 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:51:05,166 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:51:08,505 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:10,699 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:51:11,520 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:14,812 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:51:14,899 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:51:14,905 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:51:14,906 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:51:15,866 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:51:16,543 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:17,548 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:18,548 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:19,550 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:20,551 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:20,931 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:51:21,554 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:22,579 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:23,580 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:25,585 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:26,226 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:51:27,593 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:29,600 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:29,903 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:51:29,910 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:51:29,911 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:51:31,608 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:31,707 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:51:33,611 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:35,569 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 22:51:35,569 DEBUG   SenderThread:16222 [sender.py:send():382] send: history
+2024-03-10 22:51:35,569 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 22:51:35,570 INFO    SenderThread:16222 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 22:51:35,617 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:35,617 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/wandb-summary.json
+2024-03-10 22:51:37,787 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:51:37,804 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:43,151 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:51:44,937 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:51:44,982 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:51:44,991 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:51:45,027 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:51:48,579 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:51:49,173 DEBUG   SenderThread:16222 [sender.py:send():382] send: exit
+2024-03-10 22:51:49,174 INFO    SenderThread:16222 [sender.py:send_exit():589] handling exit code: 1
+2024-03-10 22:51:49,178 INFO    SenderThread:16222 [sender.py:send_exit():591] handling runtime: 956
+2024-03-10 22:51:49,179 INFO    SenderThread:16222 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 22:51:49,181 INFO    SenderThread:16222 [sender.py:send_exit():597] send defer
+2024-03-10 22:51:49,181 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:51:49,181 INFO    HandlerThread:16222 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-10 22:51:49,181 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:51:49,181 INFO    SenderThread:16222 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-03-10 22:51:49,182 INFO    SenderThread:16222 [sender.py:transition_state():617] send defer: 1
+2024-03-10 22:51:49,182 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:51:49,182 INFO    HandlerThread:16222 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-10 22:51:49,182 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:51:49,182 INFO    SenderThread:16222 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-03-10 22:51:49,182 INFO    SenderThread:16222 [sender.py:transition_state():617] send defer: 2
+2024-03-10 22:51:49,182 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:51:49,182 INFO    HandlerThread:16222 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-10 22:51:49,182 INFO    HandlerThread:16222 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-10 22:51:49,182 DEBUG   SystemMonitor:16222 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-10 22:51:49,182 DEBUG   SystemMonitor:16222 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-10 22:51:49,182 INFO    HandlerThread:16222 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-10 22:51:49,183 INFO    HandlerThread:16222 [interfaces.py:finish():202] Joined disk monitor
+2024-03-10 22:51:49,432 INFO    HandlerThread:16222 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-03-10 22:51:49,432 INFO    HandlerThread:16222 [interfaces.py:finish():202] Joined memory monitor
+2024-03-10 22:51:49,433 INFO    HandlerThread:16222 [interfaces.py:finish():202] Joined network monitor
+2024-03-10 22:51:49,433 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:51:49,433 INFO    SenderThread:16222 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-03-10 22:51:49,433 INFO    SenderThread:16222 [sender.py:transition_state():617] send defer: 3
+2024-03-10 22:51:49,433 DEBUG   SenderThread:16222 [sender.py:send():382] send: stats
+2024-03-10 22:51:49,433 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:51:49,434 INFO    HandlerThread:16222 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-10 22:51:49,434 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:51:49,434 INFO    SenderThread:16222 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-03-10 22:51:49,434 INFO    SenderThread:16222 [sender.py:transition_state():617] send defer: 4
+2024-03-10 22:51:49,434 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:51:49,434 INFO    HandlerThread:16222 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-10 22:51:49,434 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:51:49,434 INFO    SenderThread:16222 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-03-10 22:51:49,434 INFO    SenderThread:16222 [sender.py:transition_state():617] send defer: 5
+2024-03-10 22:51:49,434 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:51:49,434 INFO    HandlerThread:16222 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-10 22:51:49,434 DEBUG   SenderThread:16222 [sender.py:send():382] send: summary
+2024-03-10 22:51:49,434 INFO    SenderThread:16222 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 22:51:49,435 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:51:49,435 INFO    SenderThread:16222 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-03-10 22:51:49,435 INFO    SenderThread:16222 [sender.py:transition_state():617] send defer: 6
+2024-03-10 22:51:49,435 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:51:49,435 INFO    HandlerThread:16222 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-10 22:51:49,435 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:51:49,435 INFO    SenderThread:16222 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-03-10 22:51:49,435 INFO    SenderThread:16222 [sender.py:transition_state():617] send defer: 7
+2024-03-10 22:51:49,435 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:51:49,435 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:51:49,435 INFO    HandlerThread:16222 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-10 22:51:49,435 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:51:49,435 INFO    SenderThread:16222 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-03-10 22:51:49,592 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/wandb-summary.json
+2024-03-10 22:51:50,176 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 22:51:50,845 INFO    SenderThread:16222 [sender.py:transition_state():617] send defer: 8
+2024-03-10 22:51:50,846 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 22:51:50,846 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:51:50,847 INFO    HandlerThread:16222 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-10 22:51:50,848 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:51:50,848 INFO    SenderThread:16222 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-03-10 22:51:50,848 INFO    SenderThread:16222 [job_builder.py:build():296] Attempting to build job artifact
+2024-03-10 22:51:50,852 INFO    SenderThread:16222 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-03-10 22:51:50,908 INFO    SenderThread:16222 [job_builder.py:build():402] adding wandb-job metadata file
+2024-03-10 22:51:50,914 INFO    SenderThread:16222 [sender.py:transition_state():617] send defer: 9
+2024-03-10 22:51:50,915 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:51:50,915 DEBUG   SenderThread:16222 [sender.py:send():382] send: artifact
+2024-03-10 22:51:50,915 INFO    HandlerThread:16222 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-10 22:51:51,178 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 22:51:51,603 INFO    Thread-12 :16222 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:52,184 INFO    wandb-upload_0:16222 [upload_job.py:push():86] Skipped uploading /Users/karansampath/Library/Application Support/wandb/artifacts/staging/tmpwhu1d058
+2024-03-10 22:51:52,580 INFO    wandb-upload_1:16222 [upload_job.py:push():89] Uploaded file /Users/karansampath/Library/Application Support/wandb/artifacts/staging/tmpr4qac0om
+2024-03-10 22:51:53,849 INFO    SenderThread:16222 [sender.py:send_artifact():1494] sent artifact job-https___github.com_karansampath_teaching_arithmetic_division.git_train.py - {'id': 'QXJ0aWZhY3Q6NzUwOTE0NzUy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0NDY2NDg0Mw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzM3MjkwMjU1', 'versionIndex': 1}}}
+2024-03-10 22:51:53,850 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:51:53,850 INFO    SenderThread:16222 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-03-10 22:51:53,850 INFO    SenderThread:16222 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-10 22:51:54,614 INFO    SenderThread:16222 [dir_watcher.py:finish():388] scan: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files
+2024-03-10 22:51:54,614 INFO    SenderThread:16222 [dir_watcher.py:finish():402] scan save: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/requirements.txt requirements.txt
+2024-03-10 22:51:54,615 INFO    SenderThread:16222 [dir_watcher.py:finish():402] scan save: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log output.log
+2024-03-10 22:51:54,619 INFO    SenderThread:16222 [dir_watcher.py:finish():402] scan save: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/config.yaml config.yaml
+2024-03-10 22:51:54,622 INFO    SenderThread:16222 [dir_watcher.py:finish():402] scan save: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/wandb-summary.json wandb-summary.json
+2024-03-10 22:51:54,625 INFO    SenderThread:16222 [dir_watcher.py:finish():402] scan save: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/wandb-metadata.json wandb-metadata.json
+2024-03-10 22:51:54,625 INFO    SenderThread:16222 [sender.py:transition_state():617] send defer: 10
+2024-03-10 22:51:54,625 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 22:51:54,628 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:51:54,628 INFO    HandlerThread:16222 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-10 22:51:54,629 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:51:54,629 INFO    SenderThread:16222 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-03-10 22:51:54,629 INFO    SenderThread:16222 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-10 22:51:55,009 INFO    wandb-upload_0:16222 [upload_job.py:push():131] Uploaded file /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/requirements.txt
+2024-03-10 22:51:55,184 INFO    wandb-upload_2:16222 [upload_job.py:push():131] Uploaded file /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/config.yaml
+2024-03-10 22:51:55,184 INFO    wandb-upload_3:16222 [upload_job.py:push():131] Uploaded file /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/wandb-summary.json
+2024-03-10 22:51:55,194 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 22:51:55,194 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 22:51:55,946 INFO    wandb-upload_1:16222 [upload_job.py:push():131] Uploaded file /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/files/output.log
+2024-03-10 22:51:56,147 INFO    Thread-11 (_thread_body):16222 [sender.py:transition_state():617] send defer: 11
+2024-03-10 22:51:56,148 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:51:56,148 INFO    HandlerThread:16222 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-10 22:51:56,148 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:51:56,149 INFO    SenderThread:16222 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-03-10 22:51:56,149 INFO    SenderThread:16222 [file_pusher.py:join():178] waiting for file pusher
+2024-03-10 22:51:56,149 INFO    SenderThread:16222 [sender.py:transition_state():617] send defer: 12
+2024-03-10 22:51:56,149 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:51:56,149 INFO    HandlerThread:16222 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-10 22:51:56,150 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:51:56,150 INFO    SenderThread:16222 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-03-10 22:51:56,150 INFO    SenderThread:16222 [file_stream.py:finish():595] file stream finish called
+2024-03-10 22:51:56,200 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 22:51:56,391 INFO    SenderThread:16222 [file_stream.py:finish():599] file stream finish is done
+2024-03-10 22:51:56,391 INFO    SenderThread:16222 [sender.py:transition_state():617] send defer: 13
+2024-03-10 22:51:56,391 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 22:51:56,392 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:51:56,392 INFO    HandlerThread:16222 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-10 22:51:56,393 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:51:56,393 INFO    SenderThread:16222 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-03-10 22:51:56,393 INFO    SenderThread:16222 [sender.py:transition_state():617] send defer: 14
+2024-03-10 22:51:56,393 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:51:56,394 INFO    HandlerThread:16222 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-10 22:51:56,394 DEBUG   SenderThread:16222 [sender.py:send():382] send: final
+2024-03-10 22:51:56,394 DEBUG   SenderThread:16222 [sender.py:send():382] send: footer
+2024-03-10 22:51:56,394 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:51:56,395 INFO    SenderThread:16222 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-03-10 22:51:56,395 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 22:51:56,396 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 22:51:56,397 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 22:51:56,397 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: server_info
+2024-03-10 22:51:56,398 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 22:51:56,399 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: server_info
+2024-03-10 22:51:56,401 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-10 22:51:56,402 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-10 22:51:56,404 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:51:56,405 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: job_info
+2024-03-10 22:51:56,450 DEBUG   SenderThread:16222 [sender.py:send_request():409] send_request: job_info
+2024-03-10 22:51:56,451 INFO    MainThread:16222 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-10 22:51:56,451 INFO    MainThread:16222 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-10 22:51:56,452 INFO    MainThread:16222 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-03-10 22:51:56,453 DEBUG   HandlerThread:16222 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-10 22:51:56,453 INFO    HandlerThread:16222 [handler.py:finish():869] shutting down handler
+2024-03-10 22:51:57,410 INFO    WriterThread:16222 [datastore.py:close():296] close: /Users/karansampath/Documents/GitHub/teaching_arithmetic_division/wandb/run-20240310_223551-qxu1xgn8/run-qxu1xgn8.wandb
+2024-03-10 22:51:57,453 INFO    SenderThread:16222 [sender.py:finish():1572] shutting down sender
+2024-03-10 22:51:57,454 INFO    SenderThread:16222 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-10 22:51:57,454 INFO    SenderThread:16222 [file_pusher.py:join():178] waiting for file pusher
